@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mikroblog - SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Jednoducha navigacni lista -->
+    <nav>
+        <button id="btnRegistrace">Registrace</button>
+        <button id="btnPrihlaseni">Prihlaseni</button>
+        <button id="btnOdhlaseni" style="display:none;">Odhlaseni</button>
+        <button id="btnNovyPrispevek" style="display:none;">Novy prispevek</button>
+        <button id="btnVsechnyPrispevky">Vsechny prispevky</button>
+        <button id="btnMujProfil" style="display:none;">Muj profil</button>
+    </nav>
+    
+    <!-- Hlavni obsahova oblast -->
+    <div id="obsah">
+        <!-- Sekce pro registraci -->
+        <div id="sekceRegistrace" class="sekce" style="display:none;">
+            <h2>Registrace</h2>
+            <form id="formRegistrace">
+                <label>Uzivatelske jmeno:</label>
+                <input type="text" id="regJmeno" required>
+                <label>Heslo:</label>
+                <input type="password" id="regHeslo" required>
+                <button type="submit">Registrovat</button>
+            </form>
+            <div id="regZprava"></div>
+        </div>
+        
+        <!-- Sekce pro prihlaseni -->
+        <div id="sekcePrihlaseni" class="sekce" style="display:none;">
+            <h2>Prihlaseni</h2>
+            <form id="formPrihlaseni">
+                <label>Uzivatelske jmeno:</label>
+                <input type="text" id="loginJmeno" required>
+                <label>Heslo:</label>
+                <input type="password" id="loginHeslo" required>
+                <button type="submit">Prihlasit se</button>
+            </form>
+            <div id="loginZprava"></div>
+        </div>
+        
+        <!-- Sekce pro pridani noveho prispevku -->
+        <div id="sekceNovyPrispevek" class="sekce" style="display:none;">
+            <h2>Novy prispevek</h2>
+            <form id="formNovyPrispevek">
+                <textarea id="prispevekObsah" placeholder="Sem vloz text prispevku" required></textarea>
+                <button type="submit">Pridat prispevek</button>
+            </form>
+            <div id="novyPrispevekZprava"></div>
+        </div>
+        
+        <!-- Sekce pro zobrazeni vsech prispevku -->
+        <div id="sekceVsechnyPrispevky" class="sekce">
+            <h2>Vsechny prispevky</h2>
+            <div id="vypisPrispevku"></div>
+        </div>
+        
+        <!-- Sekce pro profil (vlastni prispevky) -->
+        <div id="sekceMujProfil" class="sekce" style="display:none;">
+            <h2>Muj profil</h2>
+            <div id="vypisMujichPrispevku"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
