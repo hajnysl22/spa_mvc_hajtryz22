@@ -1,25 +1,64 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    max-width: 400px;
-    margin: 20px auto;
+    background-color: #f4f4f4;
     text-align: center;
+    padding: 20px;
 }
+
+h1 {
+    color: #333;
+}
+
 input {
     padding: 10px;
+    margin: 5px;
     width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
 button {
-    padding: 10px;
-    margin-left: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
-ul {
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#notesList {
     list-style: none;
     padding: 0;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
 }
-li {
-    background: #f4f4f4;
+
+#notesList li {
+    background: white;
     padding: 10px;
     margin: 5px 0;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#notesList button {
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#notesList button:hover {
+    background-color: darkred;
 }
