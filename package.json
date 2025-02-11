@@ -8,15 +8,19 @@
   },
   "author": "Jakub Šenkýř",
   "license": "MIT",
-  "description": "",
+  "description": "SPA projekt",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
+    "fs": "^0.0.1-security",
     "simple-json-db": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "keywords": []
 }
